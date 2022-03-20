@@ -1,0 +1,65 @@
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+body {
+    width: 100vw; height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--light);
+    transition: 0.2s;
+}
+
+.night {
+    background-color: var(--dark);
+    transition: 0.2s;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 3.5rem; width: 9rem;
+    border-radius: 100px;
+    padding: .5rem;
+    background-color: var(--label);
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .75rem;
+    font-size: 5rem;
+}
+
+body > h1:first-child {
+    color: var(--dark);
+}
+
+body > h1:nth-child(3) {
+    color: var(--light);
+}
+
+img {
+    height: 3rem; width: 3rem;
+}
+
+div > div {
+    height: 2.65rem; width: 2.75rem;
+    margin: .5rem;
+    position: absolute;
+    left: 0;
+    background-color: #F1F1F1;
+    transition: 0.2s;
+}
+
+.on {
+    left: 5.25rem;
+    transition: 0.2s;
+}
